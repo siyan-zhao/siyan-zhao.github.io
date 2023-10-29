@@ -18,7 +18,6 @@ nav_order: 5
 
 - **Vector Institute**, Toronto, Canada
   - Student Researcher
-  - Mentors: Prof. Animesh Garg, Prof. Bradly Stadie, Prof. Jimmy Ba
   - May 2019 - Sep 2022
 
 - **NVIDIA AI Lab**, Toronto, Canada
