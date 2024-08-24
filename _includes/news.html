@@ -12,7 +12,8 @@
               {% for item in news limit: news_limit %}
                 <tr>
 <!--                   <th scope="row">{{ item.date | date: "%B %Y" }}</th> -->
-                          <th scope="row">{{ item.date | date: "[%m/%Y]" }}</th>
+                          <th scope="row" style="font-weight: normal;">{{ item.date | date: "[%m/%Y]" }}</th>
+
 
                   <td>
                     {% if item.inline -%}
