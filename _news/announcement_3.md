@@ -5,4 +5,4 @@ inline: true
 related_posts: false  
 ---
 
-[Decision Stacks](https://arxiv.org/abs/2306.06253) got accepted to NeurIPS 2023!
+[Decision Stacks](https://arxiv.org/abs/2306.06253) got accepted at NeurIPS 2023!
