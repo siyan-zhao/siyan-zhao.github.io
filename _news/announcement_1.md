@@ -1,8 +1,8 @@
 ---
-layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
-related_posts: false
+layout: post  
+date: 2024-8
+inline: true  
+related_posts: false  
 ---
 
-A simple inline announcement.
+Excited to receive the [Amazon Fellowship](https://www.sciencehub.ucla.edu/2024-amazon-fellows/).
