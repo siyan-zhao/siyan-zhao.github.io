@@ -18,6 +18,4 @@ social: true  # includes social icons at the bottom of the page
 
 Hello! I'm a third-year PhD student in Computer Science at the University of California, Los Angeles. I am fortunate to be advised by Professor [Aditya Grover](https://aditya-grover.github.io/).
 
-My primary research interest lies in endowing machine learning algorithms with human-like reasoning and planning capabilities. Currently, I am particularly drawn to **sequential decision-making, large language models, reinforcement learning, and generative models**. Previously, I have worked on 3D perception and planning for autonomous driving.
-
-Prior to joining UCLA, I obtained my bachelor's degree from the Engineering Science, Machine Intelligence program at the University of Toronto, where I am fortunate to be advised by Prof. Animesh Garg, Prof. Bradly Stadie and Prof. Jimmy Ba at the Vector Institute.
+My primary research interest lies in endowing machine learning algorithms with human-like reasoning and planning capabilities. Currently, I am particularly drawn to **sequential decision-making, large language models, reinforcement learning, and generative models**. Previously, I have worked on 3D perception and planning for autonomous driving. Prior to joining UCLA, I obtained my bachelor's degree from the Engineering Science, Machine Intelligence program at the University of Toronto.
