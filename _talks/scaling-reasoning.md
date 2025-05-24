@@ -1,7 +1,7 @@
 ---
 title: "Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning"
 date: 2025-04-01
-slides: "/assets/pdf/d1_presentation.pdf"
+slides: "assets/pdf/d1_presentation.pdf"
 venues:
   - name: "ASAP seminar series"
     url: "https://asap-seminar.github.io/"
