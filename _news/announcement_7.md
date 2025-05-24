@@ -4,4 +4,4 @@ date: 2025-05-01
 inline: true  
 related_posts: false  
 ---
-I was invited to give talks on "Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning" at [ASAP seminar series](https://asap-seminar.github.io/), [HKU NLP Labs](https://hkunlp.github.io/seminar/), [UCSD Hao AI Lab](https://hao-ai-lab.github.io/), and NVIDIA!
+Gave invited talks on "Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning" at [ASAP seminar](https://asap-seminar.github.io/), [HKU NLP Group](https://hkunlp.github.io/seminar/), [UCSD Hao AI Lab](https://hao-ai-lab.github.io/), and NVIDIA!
