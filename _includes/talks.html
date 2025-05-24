@@ -35,86 +35,47 @@
 }
 
 .talk-item {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background-color: #fafafa;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.talk-item:last-child {
+  border-bottom: none;
 }
 
 .talk-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
   gap: 1rem;
 }
 
 .talk-header h5 {
   margin: 0;
   flex: 1;
-  color: #333;
 }
 
 .talk-venues {
-  border-left: 3px solid #007bff;
-  padding-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .venue-item {
-  display: flex;
-  margin-bottom: 0.5rem;
-  align-items: center;
-  gap: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .venue-date {
-  font-weight: 600;
+  font-weight: 500;
   color: #666;
-  min-width: 100px;
-  font-size: 0.9em;
-}
-
-.venue-name {
-  color: #333;
+  margin-right: 0.75rem;
 }
 
 .venue-name a {
-  color: #007bff;
   text-decoration: none;
 }
 
 .venue-name a:hover {
   text-decoration: underline;
-}
-
-/* Alternative cleaner version */
-.talks-clean {
-  max-width: 800px;
-}
-
-.talks-clean .talk-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
-}
-
-.talks-clean .talk-item:last-child {
-  border-bottom: none;
-}
-
-.talks-clean .talk-header {
-  margin-bottom: 0.75rem;
-}
-
-.talks-clean .venue-item {
-  padding: 0.25rem 0;
-  border-left: none;
-}
-
-.talks-clean .talk-venues {
-  border-left: none;
-  padding-left: 0;
-  margin-left: 1rem;
 }
 </style>
