@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
@@ -10,13 +9,11 @@ layout: default
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
-
         <article>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
               {% if page.profile.image_circular %}
                 {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
               {% else %}
@@ -36,22 +33,18 @@ layout: default
             {%- endif %}
           </div>
           {%- endif %}
-
           <div class="clearfix">
             {{ content }}
           </div>
-
           <!-- Social -->
           {%- if page.social %}
             <div class="social">
               <div class="contact-icons">
                 {% include social.html %}
               </div>
-
               <div class="contact-note">
                 {{ site.contact_note }}
               </div>
-
             </div>
           {%- endif %}
               
@@ -59,21 +52,23 @@ layout: default
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">recent updates</a></h2>
             {%- include news.html limit=true %}
           {%- endif %}
-
           <!-- Latest posts
           {% if page.latest_posts -%}
             <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
             {%- include latest_posts.html %}
           {%- endif %} -->
-
           <br>
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">publications and preprints</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
-
+          
+          <!-- Selected talks -->
+          {% if page.selected_talks -%}
+            <h2><a href="{{ '/talks/' | relative_url }}" style="color: inherit;">invited talks</a></h2>
+            {%- include talks.html %}
+          {%- endif %}
           
         </article>
-
 </div>
