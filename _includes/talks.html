@@ -3,11 +3,13 @@
   {% for talk in talks %}
     <div class="talk-item">
       <h4>{{ talk.title }}</h4>
-      {% for venue in talk.venues %}
-        <p>{{ venue.date }}: 
-        {% if venue.url %}<a href="{{ venue.url }}">{{ venue.name }}</a>{% else %}{{ venue.name }}{% endif %}
-        </p>
-      {% endfor %}
+      <div style="margin-left: 20px;">
+        {% for venue in talk.venues %}
+          <p>{{ venue.date }}: 
+          {% if venue.url %}<a href="{{ venue.url }}">{{ venue.name }}</a>{% else %}{{ venue.name }}{% endif %}
+          </p>
+        {% endfor %}
+      </div>
     </div>
   {% endfor %}
 </div>
