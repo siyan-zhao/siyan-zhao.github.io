@@ -1,0 +1,13 @@
+<div class="talks">
+  {% assign talks = site.talks | sort: 'date' | reverse %}
+  {% for talk in talks %}
+    <div class="talk-item">
+      <h4>{{ talk.title }}</h4>
+      {% for venue in talk.venues %}
+        <p>{{ venue.date }}: 
+        {% if venue.url %}<a href="{{ venue.url }}">{{ venue.name }}</a>{% else %}{{ venue.name }}{% endif %}
+        </p>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
