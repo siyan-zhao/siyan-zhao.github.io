@@ -49,7 +49,7 @@ layout: default
           {%- endif %}
               
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">recent updates</a></h2>
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Recent Updates</a></h2>
             {%- include news.html limit=true %}
           {%- endif %}
           <!-- Latest posts
@@ -60,13 +60,14 @@ layout: default
           <br>
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">publications and preprints</a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications and Preprints</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
           
           <!-- Selected talks -->
           {% if page.selected_talks -%}
-            <h2><a href="{{ '/talks/' | relative_url }}" style="color: inherit;">invited talks</a></h2>
+            <br>
+            <h2><a href="{{ '/talks/' | relative_url }}" style="color: inherit;">Invited Talks</a></h2>
             {%- include talks.html %}
           {%- endif %}
           
