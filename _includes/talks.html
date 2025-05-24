@@ -2,10 +2,13 @@
   {% assign talks = site.talks | sort: 'date' | reverse %}
   {% for talk in talks %}
     <div class="talk-item">
+      <h5>{{ talk.title }}</h5>
       {% if talk.slides %}
-        <h5><a href="{{ talk.slides | relative_url }}" target="_blank">{{ talk.title }}</a></h5>
-      {% else %}
-        <h5>{{ talk.title }}</h5>
+        <div style="margin-bottom: 10px;">
+          <a href="{{ talk.slides | relative_url }}" target="_blank" class="btn btn-sm btn-outline-primary">
+            📄 Slides
+          </a>
+        </div>
       {% endif %}
       <div style="margin-left: 20px;">
         {% for venue in talk.venues %}
