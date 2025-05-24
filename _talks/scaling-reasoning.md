@@ -5,7 +5,7 @@ venues:
   - name: "ASAP seminar series"
     url: "https://asap-seminar.github.io/"
     date: "2025-04"
-  - name: "HKU NLP Labs"
+  - name: "HKU NLP Group"
     url: "https://hkunlp.github.io/seminar/"
     date: "2025-05"
   - name: "UCSD Hao AI Lab"
