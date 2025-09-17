@@ -47,7 +47,7 @@ layout: default
               </div>
             </div>
           {%- endif %}
-              
+
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Recent Updates</a></h2>
             {%- include news.html limit=true %}
@@ -60,19 +60,19 @@ layout: default
           <br>
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2>Selected Papers</h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Papers</a></h2>
             {%- include selected_papers.html %}
-            <div style="text-align: right; margin-top: 10px;">
-              <a href="{{ '/publications/' | relative_url }}">All Papers</a>
-            </div>
+
+
+
           {%- endif %}
-          
+
           <!-- Selected talks -->
           {% if page.selected_talks -%}
             <br>
             <h2><a href="{{ '/talks/' | relative_url }}" style="color: inherit;">Invited Talks</a></h2>
             {%- include talks.html %}
           {%- endif %}
-          
+
         </article>
 </div>
