@@ -60,8 +60,11 @@ layout: default
           <br>
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Papers</a></h2>
+            <h2>Selected Papers</h2>
             {%- include selected_papers.html %}
+            <div style="text-align: right; margin-top: 10px;">
+              <a href="{{ '/publications/' | relative_url }}">All Papers</a>
+            </div>
           {%- endif %}
           
           <!-- Selected talks -->
