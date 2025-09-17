@@ -2,8 +2,18 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr">
-        {%- if entry.abbr -%}
+        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+        {%- if entry.preview -%}
+          {% if entry.preview contains '://' -%}
+          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          {%- else -%}
+            {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
+            {% include figure.html
+            path=entry_path
+            class="preview z-depth-1 rounded"
+            alt=entry.preview -%}
+          {%- endif -%}
+        {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
             {%- assign venue_style = nil -%}
             {%- if site.data.venues[entry.abbr].color != blank -%}
@@ -13,17 +23,11 @@
           {%- else -%}
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
-        {%- elsif entry.journal -%}
-          <abbr class="badge">{{entry.journal}}</abbr>
-        {%- elsif entry.booktitle -%}
-          <abbr class="badge">{{entry.booktitle}}</abbr>
-        {%- elsif entry.school -%}
-          <abbr class="badge">{{entry.school}}</abbr>
         {%- endif -%}
         </div>
 
         <!-- Entry bib key -->
-        <div id="{{entry.key}}" class="col-sm-10">
+        <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
         <!-- Title -->
         <div class="title">{{entry.title}}</div>
         <!-- Author -->
@@ -129,7 +133,7 @@
           {{ entry.note | strip }}
         </div>
         {%- if entry.award %}
-          <div class="award"><b><span style="color:#DF5279">{{entry.award}}</span></b></div>
+          <div lass="award"><b><span style="color:#DF5279">{{entry.award}}</span></b></div>
         {%- endif %}
 
           <!-- Links/Buttons -->
@@ -183,6 +187,9 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
+          <!-- {%- if entry.award %}
+            <div lass="award"><b><span style="color:#ff1253">{{entry.award}}</span></b></div>
+          {%- endif %} -->
           </div>
           {% if site.badges %}
           <div class="badges">
