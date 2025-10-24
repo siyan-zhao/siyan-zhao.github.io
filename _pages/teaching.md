@@ -9,33 +9,24 @@ nav_order: 5
 
 ---
 
-### Teaching Assistant
-- **CS M146**: Intro to Machine Learning, Fall 2023, UCLA
-
-
-<!-- ---
-
 ### Research & Industry Experience
-
-- **Vector Institute**, Toronto, Canada
-  - Student Researcher
-  - May 2019 - Sep 2022
-
-- **H AI Lab**, Toronto, Canada
-  - Research Intern
-  - May 2020 - Jan 2021
-
-- **NVIDIA AI Lab**, Toronto, Canada
-  - Research Intern
-  - May 2020 - Jan 2021
-
---- -->
-
+* **Meta Superintelligence Labs**, Menlo Park, CA
+  - Research Scientist Intern — *06/2025 – 09/2025*
+    - Topic: RL framework for diffusion-based LLMs.
+* **Amazon AGI Labs**, Sunnyvale, CA
+  - Applied Scientist Intern — *06/2024 – 09/2024*
+    - Topic: Long-context preference following benchmark for LLMs.
+* **NVIDIA AI Lab**, Toronto, Canada
+  - Research Intern — *05/2020 – 01/2021*
+    - Topic: Multi-agent RL policies for self-driving.
+* **Vector Institute**, Toronto, Canada
+  - Student Researcher — *05/2019 – 09/2022*
+    - Topic: Imitation learning & Traffic prediction.
 
 ---
 
-### Peer Review
+### Teaching
+- **CS M146**: Intro to Machine Learning, Fall 2023, UCLA
 
-- NeurIPS 2023
-- ICML 2022
-- ECCV 2022
+
+

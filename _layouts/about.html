@@ -47,9 +47,9 @@ layout: default
               </div>
             </div>
           {%- endif %}
-              
+
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Recent Updates</a></h2>
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">recent updates</a></h2>
             {%- include news.html limit=true %}
           {%- endif %}
           <!-- Latest posts
@@ -59,17 +59,17 @@ layout: default
           {%- endif %} -->
           <br>
           <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications and Preprints</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-          
+{% if page.selected_papers -%}
+  <h2>selected works <a href="{{ '/publications/' | relative_url }}" style="color: inherit;">(all)</a></h2>
+  {%- include selected_papers.html %}
+{%- endif %}
+
           <!-- Selected talks -->
           {% if page.selected_talks -%}
             <br>
             <h2><a href="{{ '/talks/' | relative_url }}" style="color: inherit;">Invited Talks</a></h2>
             {%- include talks.html %}
           {%- endif %}
-          
+
         </article>
 </div>

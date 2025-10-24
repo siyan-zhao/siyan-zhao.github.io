@@ -5,4 +5,4 @@ inline: true
 related_posts: false  
 ---
 
-[PrefEval](https://prefeval.github.io/) is accepted to ICLR 2025 as Oral!
+[PrefEval](https://prefeval.github.io/) is accepted to ICLR 2025 as **oral presentation**.
