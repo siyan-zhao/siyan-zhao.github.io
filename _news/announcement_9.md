@@ -5,4 +5,4 @@ inline: true
 related_posts: false  
 ---
 
-New blog post on our recent work — [Self-Distilled Reasoner: On-Policy Self-Distillation](https://siyan-zhao.github.io/blog/2026/opsd/)!
+New blog post on — [Self-Distilled Reasoner: On-Policy Self-Distillation](https://siyan-zhao.github.io/blog/2026/opsd/)!
